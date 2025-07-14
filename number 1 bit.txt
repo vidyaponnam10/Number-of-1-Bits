@@ -1,0 +1,8 @@
+public class Solution {
+    
+    public int hammingWeight(int n) { 
+        String s = Integer.toBinaryString(n);           // converted given n into Binary String
+        s=s.replaceAll("([^1])","");                   //Other than 1's are removed 
+        return s.length();                            // Then returned the length of that String(containing only 1's)
+    }
+}
